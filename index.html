@@ -28,6 +28,7 @@
     .footer{position:sticky;bottom:0;display:flex;gap:9px;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid #e5e5e5;z-index:4}.btn{min-height:40px;border-radius:10px;padding:0 12px;font:700 10px Inter;cursor:pointer;transition:transform .16s,filter .16s}.btn:active{transform:scale(.97)}.mapbtn{flex:1;border:1px solid #cfcfcf;background:white;color:#555;text-decoration:none;display:grid;place-items:center}.confirm{flex:1.5;border:0;background:#ee4d2d!important;color:#fff!important;font-weight:800;box-shadow:0 4px 12px #ee4d2d35;overflow:hidden;position:relative}.confirm.clicked{animation:buttonPop .42s ease}.toast{position:fixed;z-index:20;bottom:76px;left:50%;transform:translate(-50%,12px);opacity:0;transition:.2s;pointer-events:none;background:#252525eF;color:white;border-radius:30px;padding:10px 15px;font-size:11px;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}
     .campus-guide{width:min(100% - 24px,900px);margin:18px auto 36px;position:relative;overflow:hidden;border-radius:22px;padding:18px;background:#eaf2fc;isolation:isolate;opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}.campus-guide.revealed{opacity:1;transform:translateY(0)}.campus-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(2px);opacity:.23;z-index:-2}.campus-guide:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#eff6ffdf,#ffffffd9);z-index:-1}.campus-ghost-logo{position:absolute;right:20px;top:15px;width:clamp(110px,22vw,190px);object-fit:contain;opacity:.12;z-index:-1;animation:logoGlow 4s ease-in-out infinite}.guide-card{position:relative;background:#ffffffeb;border:1px solid #dce6f4;border-radius:17px;padding:14px;box-shadow:0 8px 25px #24395b14}.guide-title-row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.guide-title-row h2{font-size:16px;margin:0;color:#173a63}.guide-title-row p{font-size:10px;color:#748298;margin:4px 0 0}.map-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:10px}.map-tab{min-height:36px;border:1px solid #d8e2f0;background:#fff;color:#355575;border-radius:9px;font:700 10px Inter;cursor:pointer}.map-tab.active{background:#143e68;color:#fff;border-color:#143e68}.map-board{position:relative;background:#fff;border:1px solid #d9e3f1;border-radius:14px;overflow:hidden;padding:7px}.campus-map-image{display:block;width:100%;height:auto;min-height:190px;object-fit:contain}.map-land{fill:#aeb0b3;stroke:#45484c;stroke-width:3}.map-road{fill:none;stroke:#f4f5f7;stroke-width:32}.map-road-line{fill:none;stroke:#a7a9ac;stroke-width:1.5;stroke-dasharray:9 7}.building{fill:#f6f8fb;stroke:#7e8da0;stroke-width:2}.building-blue{fill:#8bcaf0;stroke:#167ac1;stroke-width:2}.building-label{font:700 13px Inter,Arial;fill:#4b5563}.road-label{font:700 12px Inter,Arial;fill:#46515d}.route-one,.route-three{fill:none;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2 0;filter:drop-shadow(0 1px 1px #fff)}.route-one{stroke:#1689dc}.route-three{stroke:#21a768}.route-dot{stroke:#fff;stroke-width:3}.gate-label{font:800 11px Inter,Arial;fill:#fff}.gate-one{fill:#086fc5}.gate-three{fill:#12884f}.park-label{font:700 9px Inter,Arial;fill:#fff}.parking-one{fill:#18588d}.parking-two{fill:#18588d}.place-pin{fill:#e0a931;stroke:#fff;stroke-width:3}.place-text{font:800 10px Inter,Arial;fill:#34475e}.map-art.filter-one .route-three,.map-art.filter-one .gate-three-group{opacity:.14}.map-art.filter-three .route-one,.map-art.filter-three .gate-one-group{opacity:.14}.map-art .route-one,.map-art .route-three,.map-art .gate-one-group,.map-art .gate-three-group{transition:opacity .25s}.map-caption{position:absolute;left:14px;top:13px;border-radius:7px;background:#fffffff0;color:#243e5b;padding:6px 8px;font-size:9px;font-weight:800;box-shadow:0 2px 8px #19334a20}.directions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.direction{border-radius:11px;padding:10px 11px;font-size:10px;line-height:1.5;font-weight:700}.direction b{display:block;font-size:9px;letter-spacing:.04em;margin-bottom:3px}.direction.blue{background:#e8f2ff;color:#174d83;border-left:5px solid #1689dc}.direction.green{background:#e6f7ee;color:#187444;border-left:5px solid #21a768}.map-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;font-size:9px;color:#65748a}.map-foot a{color:#157e75;font-weight:800;text-decoration:none}.reveal-title{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#53708e;font-weight:800;margin-bottom:5px}
     .confetti{position:fixed;z-index:40;top:-12px;width:8px;height:12px;pointer-events:none;animation:fall 2.7s ease-in forwards}
+    .music-toggle{position:fixed;z-index:30;right:14px;bottom:70px;width:44px;height:44px;border:0;border-radius:50%;background:#252525;color:#fff;font-size:18px;box-shadow:0 5px 18px #0003;cursor:pointer;display:grid;place-items:center;transition:.2s}.music-toggle.playing{background:#26aa99}.music-toggle:active{transform:scale(.94)}.music-player{position:fixed;width:1px;height:1px;left:-100px;bottom:0;overflow:hidden}
     @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes float{50%{transform:translateY(-4px) rotate(4deg)}}@keyframes logoGlow{50%{opacity:.32;transform:scale(.96)}}@keyframes buttonPop{50%{transform:scale(1.06) rotate(-1deg);filter:brightness(1.08)}}@keyframes fall{to{transform:translateY(105vh) rotate(650deg);opacity:0}}
     @media(min-width:600px){body{padding:22px 0}.page{min-height:calc(100vh - 44px);border-radius:22px}.appbar{position:relative}}
     @media(max-width:560px){.campus-guide{padding:9px;margin-top:12px;border-radius:16px}.guide-card{padding:9px}.map-tab{font-size:9px;min-height:33px}.directions{gap:6px}.direction{padding:8px;font-size:9px}.campus-map-image{min-height:160px}.guide-title-row h2{font-size:14px}}
@@ -56,6 +57,8 @@
     </section>
     <footer class="footer"><a class="btn mapbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+B%C3%A1ch+khoa+268+L%C3%BD+Th%C6%B0%E1%BB%9Dng+Ki%E1%BB%87t+TP.HCM">📍 Xem bản đồ</a><button class="btn confirm" id="confirmBtn" type="button">Mình nhận hàng nha 🥰📦</button></footer>
   </main>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Phát nhạc" title="Có hẹn với thanh xuân — MONSTAR">♫</button>
+  <div class="music-player" id="musicPlayer"></div>
   <div class="toast" id="toast" role="status">Đã sao chép mã đơn hàng!</div>
   <section class="campus-guide" id="campusGuide" aria-label="Sơ đồ đường vào Đại học Bách khoa">
     <img class="campus-bg" src="https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2026/3/10/dhbk-1773150069552968111666-125-0-1061-1788-crop-1773150222839432642073.jpg" alt="" loading="lazy" />
@@ -75,11 +78,87 @@
     function showToast(message){toast.textContent=message;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2200)}
     document.querySelector('#copyBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('GRAD-HAU-271126');showToast('Đã sao chép mã đơn hàng!')}catch{showToast('Mã đơn: GRAD-HAU-271126')}});
     const confirmButton=document.querySelector('#confirmBtn');
+    let musicPlayer=null;
+    let musicReady=false;
+    let musicPlaying=false;
+    let playWhenReady=false;
+    const musicToggle=document.querySelector('#musicToggle');
+
+    function setMusicButton(playing){
+      musicPlaying=playing;
+      musicToggle.classList.toggle('playing',playing);
+      musicToggle.textContent=playing?'Ⅱ':'♫';
+      musicToggle.setAttribute('aria-label',playing?'Tạm dừng nhạc':'Phát nhạc');
+      musicToggle.title=playing?'Tạm dừng “Có hẹn với thanh xuân”':'Phát “Có hẹn với thanh xuân”';
+    }
+
+    function playMusic(){
+      if(!musicReady||!musicPlayer){
+        playWhenReady=true;
+        return;
+      }
+      musicPlayer.seekTo(0,true);
+      musicPlayer.playVideo();
+      setMusicButton(true);
+      playWhenReady=false;
+    }
+
+    window.onYouTubeIframeAPIReady=()=>{
+      musicPlayer=new YT.Player('musicPlayer',{
+        height:'1',
+        width:'1',
+        videoId:'vpRi8S6uXAg',
+        playerVars:{autoplay:1,muted:1,start:0,loop:1,playlist:'vpRi8S6uXAg',rel:0,playsinline:1},
+        events:{
+          onReady:()=>{
+            musicReady=true;
+            musicPlayer.mute();
+            musicPlayer.seekTo(0,true);
+            musicPlayer.playVideo();
+            if(playWhenReady)playMusic();
+          },
+          onStateChange:(event)=>{
+            if(event.data===YT.PlayerState.PLAYING)setMusicButton(true);
+            if(event.data===YT.PlayerState.PAUSED)setMusicButton(false);
+            if(event.data===YT.PlayerState.ENDED){
+              musicPlayer.seekTo(0,true);
+              musicPlayer.playVideo();
+            }
+          }
+        }
+      });
+    };
+    const youtubeApi=document.createElement('script');
+    youtubeApi.src='https://www.youtube.com/iframe_api';
+    document.head.appendChild(youtubeApi);
+
+    musicToggle.addEventListener('click',()=>{
+      if(!musicReady||!musicPlayer){
+        playWhenReady=true;
+        showToast('Đang tải nhạc...');
+        return;
+      }
+      if(musicPlaying)musicPlayer.pauseVideo();
+      else{
+        musicPlayer.unMute();
+        playMusic();
+      }
+    });
+
+    let firstUserGesture=true;
+    document.addEventListener('pointerdown',()=>{
+      if(!firstUserGesture||!musicReady||!musicPlayer)return;
+      firstUserGesture=false;
+      musicPlayer.unMute();
+      playMusic();
+    },{once:false});
+
     confirmButton.addEventListener('click',()=>{
       confirmButton.classList.remove('clicked');
       void confirmButton.offsetWidth;
       confirmButton.classList.add('clicked');
       showToast('Bạn nhận hàng rồi nha 🥰💛');
+      playMusic();
       for(let i=0;i<30;i++){
         const c=document.createElement('i');
         c.className='confetti';
